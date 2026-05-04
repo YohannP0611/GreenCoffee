@@ -2,9 +2,7 @@
 
 **TI616 Sustainable Digital. EFREI Paris. 2025-2026.**
 
-> This document is a structured starting point for the final PDF report (max. 25 pages excluding appendices). To convert to PDF: open in any markdown editor (Typora, Obsidian) or use `pandoc report.md -o report.pdf`.
-
----
+website: https://greencoffee.onrender.com/
 
 ## 1. Project presentation
 
