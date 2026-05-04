@@ -1,0 +1,21 @@
+{
+  "name": "green-coffee",
+  "version": "1.0.0",
+  "description": "Eco-designed website about coffee and its particularities. TI616 EFREI Sustainable Digital project.",
+  "main": "backend/server.js",
+  "scripts": {
+    "start": "node --no-warnings backend/server.js",
+    "dev": "node --no-warnings --watch backend/server.js",
+    "init-db": "node --no-warnings backend/init-db.js"
+  },
+  "keywords": ["green-it", "eco-design", "coffee"],
+  "license": "MIT",
+  "engines": {
+    "node": ">=22.5"
+  },
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "express": "^4.21.2",
+    "express-session": "^1.18.1"
+  }
+}
