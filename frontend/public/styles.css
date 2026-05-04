@@ -1,0 +1,136 @@
+/* Green Coffee - feuille de style unique. Polices systeme. Dark mode auto. */
+*,*::before,*::after{box-sizing:border-box}
+:root{
+  --bg:#fafaf7;
+  --fg:#1a1a1a;
+  --muted:#5a5a5a;
+  --accent:#2d5016;
+  --accent-fg:#fff;
+  --border:#d4d4d0;
+  --danger:#8b1a1a;
+  --info-bg:#f0ede4;
+  --max:62rem;
+  --space:1rem;
+  --radius:.25rem;
+}
+@media (prefers-color-scheme:dark){
+  :root{
+    --bg:#000;
+    --fg:#e8e8e6;
+    --muted:#a0a0a0;
+    --accent:#7fb069;
+    --accent-fg:#000;
+    --border:#333;
+    --info-bg:#1a1a1a;
+  }
+}
+html{font-size:16px;-webkit-text-size-adjust:100%}
+body{
+  margin:0;
+  font-family:system-ui,-apple-system,Segoe UI,Roboto,sans-serif;
+  font-size:1rem;
+  line-height:1.55;
+  color:var(--fg);
+  background:var(--bg);
+}
+.skip{position:absolute;left:-9999px;top:auto}
+.skip:focus{position:static;display:inline-block;padding:.5rem;background:var(--accent);color:var(--accent-fg)}
+a{color:var(--accent);text-decoration:underline}
+a:hover,a:focus{text-decoration:none}
+img{max-width:100%;height:auto}
+
+/* Header / nav */
+.site-header{border-bottom:1px solid var(--border);padding:.75rem var(--space)}
+.site-header nav{max-width:var(--max);margin:0 auto;display:flex;align-items:center;justify-content:space-between;gap:1rem;flex-wrap:wrap}
+.brand{font-weight:700;font-size:1.1rem;text-decoration:none;color:var(--fg)}
+.site-header ul{list-style:none;margin:0;padding:0;display:flex;gap:1rem;flex-wrap:wrap}
+.site-header a[aria-current="page"]{font-weight:600;text-decoration:none}
+
+/* Layout */
+main{max-width:var(--max);margin:0 auto;padding:1.5rem var(--space)}
+.site-footer{border-top:1px solid var(--border);padding:1rem var(--space);font-size:.875rem;color:var(--muted);max-width:var(--max);margin:2rem auto 0}
+
+/* Headings */
+h1{font-size:1.875rem;line-height:1.2;margin:0 0 .75rem}
+h2{font-size:1.375rem;margin:1.5rem 0 .5rem}
+h3{font-size:1.125rem;margin:1rem 0 .25rem}
+.lead{font-size:1.125rem;color:var(--muted);max-width:50ch}
+
+/* Hero */
+.hero{padding:1.5rem 0 .5rem;border-bottom:1px solid var(--border);margin-bottom:1.5rem}
+
+/* Grids */
+.grid{display:grid;gap:1.5rem;grid-template-columns:1fr}
+@media (min-width:600px){.grid{grid-template-columns:1fr 1fr}}
+.grid article{padding:1rem;border:1px solid var(--border);border-radius:var(--radius)}
+
+.cols{list-style:none;margin:0;padding:0;display:grid;gap:.75rem;grid-template-columns:1fr}
+@media (min-width:600px){.cols{grid-template-columns:1fr 1fr}}
+.cols li{padding-left:1rem;border-left:3px solid var(--accent)}
+
+/* Buttons & links */
+.cta,button{
+  display:inline-block;padding:.5rem 1rem;border:1px solid var(--accent);
+  background:var(--accent);color:var(--accent-fg);font:inherit;cursor:pointer;
+  border-radius:var(--radius);text-decoration:none
+}
+.cta:hover,button:hover{opacity:.85}
+button.danger{background:var(--danger);border-color:var(--danger)}
+.link-btn{
+  display:inline-block;padding:.5rem 1rem;background:transparent;
+  color:var(--fg);border:1px solid var(--border);text-decoration:none;
+  font:inherit;cursor:pointer;border-radius:var(--radius)
+}
+.link-btn:hover{background:var(--info-bg)}
+.inline-form{display:inline}
+
+/* Forms */
+.form{display:flex;flex-direction:column;gap:.75rem;max-width:100%}
+.form.narrow{max-width:28rem}
+.form label{display:flex;flex-direction:column;font-weight:500;gap:.25rem}
+.form input,.form select,.form textarea{
+  padding:.5rem;border:1px solid var(--border);background:var(--bg);
+  color:var(--fg);font:inherit;border-radius:var(--radius);width:100%
+}
+.form input:focus,.form select:focus,.form textarea:focus{outline:2px solid var(--accent);outline-offset:1px}
+.form small{color:var(--muted);font-size:.875rem}
+.req{color:var(--danger)}
+.actions{display:flex;gap:.5rem;flex-wrap:wrap;align-items:center;margin-top:.5rem}
+
+.errors{background:transparent;border:1px solid var(--danger);color:var(--danger);padding:.5rem 1rem;border-radius:var(--radius);margin:0 0 1rem}
+.info{background:var(--info-bg);padding:.5rem 1rem;border-radius:var(--radius);margin:0 0 1rem;font-size:.9rem}
+
+/* Filters */
+.filters{display:flex;gap:.75rem;flex-wrap:wrap;align-items:flex-end;margin:1rem 0;padding:.75rem;border:1px solid var(--border);border-radius:var(--radius)}
+.filters label{display:flex;flex-direction:column;font-size:.875rem;gap:.25rem}
+.filters input,.filters select{padding:.4rem;border:1px solid var(--border);background:var(--bg);color:var(--fg);font:inherit;border-radius:var(--radius)}
+
+/* Coffee list */
+.coffees{list-style:none;margin:0;padding:0;display:grid;gap:1rem;grid-template-columns:1fr}
+@media (min-width:600px){.coffees{grid-template-columns:1fr 1fr}}
+.coffees li{padding:.75rem 1rem;border:1px solid var(--border);border-radius:var(--radius)}
+.coffees h3{margin:0 0 .25rem}
+.coffees a{color:var(--fg)}
+.meta{color:var(--muted);font-size:.875rem;margin:.25rem 0}
+.notes{font-size:.95rem;margin:.25rem 0 0}
+
+/* Coffee detail */
+.coffee-detail .props{display:grid;grid-template-columns:max-content 1fr;gap:.25rem 1rem;margin:1rem 0;padding:.75rem;border:1px solid var(--border);border-radius:var(--radius)}
+.coffee-detail dt{font-weight:600;color:var(--muted)}
+.coffee-detail dd{margin:0}
+
+/* Tables */
+.data-table{width:100%;border-collapse:collapse;margin:1rem 0;font-size:.95rem}
+.data-table th,.data-table td{text-align:left;padding:.5rem;border-bottom:1px solid var(--border)}
+.data-table th{background:var(--info-bg);font-weight:600}
+
+/* Pagination */
+.pagination{display:flex;gap:1rem;align-items:center;justify-content:center;margin:1.5rem 0;font-size:.95rem}
+.pagination .disabled{color:var(--muted)}
+
+/* Print: even leaner */
+@media print{
+  .site-header nav ul,.actions,.filters,.pagination{display:none}
+  body{background:#fff;color:#000}
+  a{color:#000;text-decoration:none}
+}
