@@ -4,7 +4,7 @@ Eco-designed website about coffee and its particularities. Mini-project for TI61
 
 ## Deployed URL
 
-**To be filled in after deployment.** Example: https://green-coffee.up.railway.app
+**To be filled in after deployment.** Example: https://greencoffee.onrender.com
 
 ## Team and roles
 
