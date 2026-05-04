@@ -128,18 +128,26 @@ Cost factor 10 (about 100 ms per hash). All queries are parameterised: SQL injec
 
 ### Before / after comparison
 
-> **To be filled in with real screenshots after first deploy.** Below is the indicative target.
+# Benchmark greencoffee.onrender.com vs site web moyen
 
-| Indicator | Before | After | Gain |
-|-----------|--------|-------|------|
-| Home page weight | TBD | 2.9 KB | TBD% |
-| HTTP requests | TBD | 2 | TBD% |
-| EcoIndex score | TBD | TBD | TBD pts |
-| EcoIndex grade | TBD | A (target) | TBD |
-| CO2 / visit | TBD | TBD g | TBD% |
-| Lighthouse Perf. score | TBD | TBD | TBD pts |
-| FCP | TBD | TBD s | TBD% |
-| LCP | TBD | TBD s | TBD% |
+| Indicateur | greencoffee | Site moyen | Gain |
+|------------|-------------|------------|------|
+| **Website Carbon** | A+ | E | Top 100 % mondial |
+| **Poids de page** | 0,003 – 0,004 Mo | ~2,3 Mo | −99 % |
+| **Requêtes HTTP** | 2 | ~70 | −97 % |
+| **Éléments DOM** | 46 – 90 | ~1 500 | −94 à −97 % |
+| **EcoIndex — home** | 95 / 100 (A) | ~50 / 100 (C–D) | +45 pts |
+| **EcoIndex — liste** | 92 / 100 (A) | ~50 / 100 (C–D) | +42 pts |
+| **EcoIndex — détail** | 95 / 100 (A) | ~50 / 100 (C–D) | +45 pts |
+| **Classement EcoIndex** | 3 224 / 595 000 | médian | Top 0,54 % |
+| **Lighthouse Performance** | 100 | ~55 | +45 pts |
+| **Lighthouse Accessibilité** | 98 – 100 | ~70 | +28 – 30 pts |
+| **Lighthouse Bonnes pratiques** | 100 | ~80 | +20 pts |
+| **Lighthouse SEO** | 100 | ~80 | +20 pts |
+| **FCP** | 0,8 s | ~3,0 s | −73 % |
+| **LCP** | 0,8 s | ~4,5 s | −82 % |
+| **Total Blocking Time** | 0 ms | ~300 ms | −100 % |
+| **Cumulative Layout Shift** | 0 | ~0,1 | Parfait |
 
 ### Identified pollution sources
 
