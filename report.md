@@ -6,6 +6,11 @@ website: https://greencoffee.onrender.com/
 
 ## 1. Project presentation
 
+### Team members
+Yohann Pouillieute
+Valentin Dubrulle
+Augustin du Rieu de Maynadier
+
 ### Value proposition
 Green Coffee is a lean encyclopedia of the world's coffees. It documents botanical varieties, post-harvest processes and producing terroirs in a textual, structured format.
 
@@ -168,7 +173,7 @@ See `docs/test-scenarios.md`. 25 scenarios validated.
 
 ### Lighthouse results
 
-> Run on the deployed URL. Add screenshots to `docs/screenshots/`.
+> Screenshots in `docs/`.
 
 - Performance: target > 95.
 - Accessibility: target > 90 (semantic tags, alt absent because no images, contrasts respected).
@@ -203,7 +208,8 @@ See `docs/test-scenarios.md`. 25 scenarios validated.
 - Branching: `main` protected, `feature/*` ephemeral.
 
 ### Member contributions
-> To be filled in with the screenshot of GitHub Projects and the per-member commit count (`git shortlog -sne`).
+<img width="1229" height="922" alt="image" src="https://github.com/user-attachments/assets/679454a0-f93d-43fb-bbbf-527dcaca333e" />
+
 
 ---
 
